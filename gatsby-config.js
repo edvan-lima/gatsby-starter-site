@@ -2,6 +2,7 @@ const path = require('path');
 const config = require('./config/website');
 
 module.exports = {
+  pathPrefix: config.pathPrefix,
   siteMetadata: {
     title: config.siteTitle,
     description: config.siteDescription,
@@ -9,7 +10,6 @@ module.exports = {
     siteUrl: config.siteUrl,
     siteLogo: config.siteLogo,
     siteBanner: config.siteBanner,
-    pathPrefix: config.pathPrefix,
   },
   plugins: [
     // MARKDOWN
